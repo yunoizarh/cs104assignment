@@ -1,2 +1,2 @@
 # cs104assignment
-my assignment solutions and codes foe csc104
+my assignment solutions and codes for csc104

@@ -1,15 +1,5 @@
-   # -*- coding: utf-8 -*-
 """
-Created on Wed Apr 24 14:31:32 2019
-
-@author: Maimuna Zabair Unoiza
-
-Simple bank ussd code
-"""
-
-"""
-Algorithim
-Enter code:
+Algorithim:
 1.Quick banking
 2.Transfer
 3.Airtime(self)
@@ -21,7 +11,8 @@ Enter code:
 9.Loans
 10.lfirstmonie
 11.next page
-12.exit"""
+12.exit
+"""
 
 interator=True
 first_bank_ussd= "*894#"
@@ -40,7 +31,11 @@ def pin_check():
      print('succesful!!! An sms will be sent to you shortly!')
  else:
      print('wrong pin!!')    
-    
+def balance():
+  if trnf_amount<balance:
+     print('Transaction succesful!')
+  else:
+     print('Insuficient fund!')
     
         
 while interator:
@@ -67,10 +62,7 @@ while interator:
                      print(bank_access())
                  else:
                      print('Your option is not in our database! bank:')
-                 if trnf_amount<balance:
-                     print('Transaction succesful!')
-                 else:
-                     print('Insuficient fund!')
+                 Print(balance())
              elif choice == 2:                                                  #airtime self
                  card_amount = int(input('enter amount: '))
                  pin = int(input('input your 5 digit pin: '))
